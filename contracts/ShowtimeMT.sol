@@ -16,8 +16,6 @@ contract ShowtimeMT is ERC1155Burnable, ERC2981Royalties, AccessProtected, BaseR
     string public baseURI = "https://gateway.pinata.cloud/ipfs/";
     mapping(uint256 => string) private _hashes;
 
-    bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
-
     constructor() ERC1155("") {}
 
     /**
